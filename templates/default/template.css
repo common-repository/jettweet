@@ -1,0 +1,82 @@
+.tpl-default ul,
+.tpl-default ul li {
+	margin: 0;
+	padding: 0;
+}
+.tpl-default ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+.tpl-default .tweet_avatar {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.tpl-default ul li a {
+	text-decoration: none;
+}
+.tpl-default ul li .tweet_user {
+	font-weight: bold;
+	margin-right: 10px;
+}
+.tpl-default ul li .tweet_text {
+	display: block;
+}
+.tpl-default ul li .tweet_time,
+.tpl-default ul li .retweet_count,
+.tpl-default ul li .tweet_action {
+	font-size: 11px;
+}
+.tpl-default ul li .tweet_info,
+.tpl-default ul li .tweet_time a,
+.tpl-default ul li .retweet_count {
+    color: #aaa;
+}
+.tpl-default ul li .tweet_info {
+	position: relative;
+}
+.tpl-default ul li .tweet_action_wrapper {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-left: 10px;
+}
+.tpl-default ul li .tweet_action {
+	background: url(../../images/everything-spritev2.png) no-repeat scroll 0 0 transparent;
+	text-indent: -9999px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.tpl-default ul li .tweet_reply { background-position: 0 0; }
+.tpl-default ul li .tweet_reply:hover { background-position: -16px 0; }
+.tpl-default ul li .tweet_retweet { background-position: -80px 0; }
+.tpl-default ul li .tweet_retweet:hover { background-position: -112px 0; }
+.tpl-default ul li .tweet_favorite { background-position: -32px 0; }
+.tpl-default ul li .tweet_favorite:hover { background-position: -64px 0; }
+.tpl-default ul li:hover .tweet_action_wrapper {
+	display: inline-block;
+}
+.tweet-controls {
+    margin-top: 10px;
+}
+.tweet-controls .next,
+.tweet-controls .prev {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    color: inherit;
+    cursor: pointer;	
+}
+.tweet-controls .next:hover,
+.tweet-controls .prev:hover {
+    border: 1px solid #ddd;	
+}
+.tweet-controls .next[disabled], 
+.tweet-controls .prev[disabled] {
+    border: 1px solid #ddd;
+	color: #999;
+	cursor: auto;
+}
